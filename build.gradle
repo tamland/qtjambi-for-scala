@@ -1,0 +1,22 @@
+
+apply plugin: 'scala'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	compile files('lib/qtjambi-4.7.2.jar')
+	
+	// Libraries needed to run the scala tools
+	scalaTools 'org.scala-lang:scala-compiler:2.8.1'
+	scalaTools 'org.scala-lang:scala-library:2.8.1'
+
+	// Libraries needed for scala api
+	compile 'org.scala-lang:scala-library:2.8.1'
+}
+
+
+
+
+
