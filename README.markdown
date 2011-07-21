@@ -13,11 +13,6 @@ val slot = () => println("slot")
 btn.released.connect(slot)
 ```
 
-#### Connecting to method
-```scala
-def slot() = { }
-btn.released.connect(slot _)
-```
 
 #### Disconnecting
 The connect method will return the function which was connected to. You _must_ pass this as the argument to disconnect. disconnect returns false if the connection does not exist.
